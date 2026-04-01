@@ -1,0 +1,11 @@
+debug/main.o
+debug/mainwindow.o
+debug/LexicalAnalyzer.o
+debug/Token.o
+debug/ReportGenerator.o
+debug/main.o
+debug/mainwindow.o
+debug/LexicalAnalyzer.o
+debug/Token.o
+debug/ReportGenerator.o
+debug/moc_mainwindow.o

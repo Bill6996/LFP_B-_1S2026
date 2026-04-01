@@ -1,0 +1,40 @@
+<html><head><meta charset='UTF-8'><style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #1A4731; border-bottom: 3px solid #1A4731; padding-bottom: 8px; }
+        h2 { color: #2E7D52; }
+        table { border-collapse: collapse; width: 100%; background: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        th { background: #1A4731; color: white; padding: 10px; text-align: left; }
+        td { border: 1px solid #ddd; padding: 8px; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        .activo   { background: #28a745; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .sindiag  { background: #fd7e14; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .critico  { background: #dc3545; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .baja     { background: #007bff; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .normal   { background: #28a745; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .alta     { background: #fd7e14; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .saturada { background: #dc3545; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .confirmada { background: #28a745; color: white; padding: 3px 8px;
+                      border-radius: 4px; font-weight: bold; }
+        .conflicto  { background: #dc3545; color: white; padding: 3px 8px;
+                      border-radius: 4px; font-weight: bold; }
+        .pendiente  { background: #fd7e14; color: white; padding: 3px 8px;
+                      border-radius: 4px; font-weight: bold; }
+        .kpi-grid { display: grid; grid-template-columns: repeat(3,1fr);
+                    gap: 16px; margin-bottom: 30px; }
+        .kpi-card { background: white; border-radius: 8px; padding: 16px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    border-left: 4px solid #1A4731; }
+        .kpi-label { font-size: 12px; color: #666; margin-bottom: 4px; }
+        .kpi-value { font-size: 22px; font-weight: bold; color: #1A4731; }
+        .bar-bg { background: #e0e0e0; border-radius: 4px; height: 18px; width: 200px; }
+        .bar-fill { height: 18px; border-radius: 4px; background: #2E7D52; }
+        .bar-red  { background: #dc3545; }
+    </style></head><body><h1>Reporte 3 - Agenda de Citas</h1><table><tr><th>Fecha</th><th>Hora</th><th>Paciente</th><th>Medico</th><th>Especialidad</th><th>Estado</th></tr><tr><td>2025-04-10</td><td>09:00</td><td>Rosa Lima</td><td>Dr. Pablo Leon</td><td>MEDICINA_GENERAL</td><td><span class='confirmada'>CONFIRMADA</span></td></tr><tr><td>2025-04-10</td><td>09:00</td><td>Juan Perez</td><td>Dr. Mario Ruiz</td><td>CARDIOLOGIA</td><td><span class='confirmada'>CONFIRMADA</span></td></tr><tr><td>2025-04-11</td><td>08:00</td><td>Luis Gomez</td><td>Dr. Pablo Leon</td><td>MEDICINA_GENERAL</td><td><span class='confirmada'>CONFIRMADA</span></td></tr><tr><td>FECHA-INVALIDA</td><td>09:00</td><td>Ana Lopez</td><td>Dr. Mario Ruiz</td><td>CARDIOLOGIA</td><td><span class='confirmada'>CONFIRMADA</span></td></tr></table></body></html>

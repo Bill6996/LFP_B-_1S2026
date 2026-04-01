@@ -1,0 +1,24 @@
+HOSPITAL {
+    PACIENTES {
+        paciente: "Ana Lopez" [edad: 28, tipo_sangre: "O+", habitacion: 101],
+        paciente: "Juan Perez" [edad: 45, tipo_sangre: "O++", habitacion: 102],
+        paciente: "Rosa Lima" [edad: 33, tipo_sangre: "B+", habitacion: 103],
+        paciente: "Luis Gomez [edad: 50, tipo_sangre: "A+", habitacion: 104],
+    };
+    MEDICOS {
+        medico: "Dr. Mario Ruiz" [especialidad: CARDIOLOGIA, codigo: "MED-001"],
+        medico: "Dra. Elena Cruz" [especialidad: CARDIO, codigo: "MED-002"],
+        medico: "Dr. Pablo Leon" [especialidad: MEDICINA_GENERAL, codigo: "MED-003"],
+    };
+    CITAS {
+        cita: "Ana Lopez" con "Dr. Mario Ruiz" [fecha: 2025-13-01, hora: 09:00],
+        cita: "Rosa Lima" con "Dr. Pablo Leon" [fecha: 2025-04-10, hora: 25:00],
+        cita: "Ana Lopez" con "Dr. Mario Ruiz" [fecha: 2025-04-10, hora: 09:00],
+        cita: "Juan Perez" con "Dr. Mario Ruiz" [fecha: 2025-04-10, hora: 09:00],
+        cita: "Luis Gomez" con "Dr. Pablo Leon" [fecha: 2025-04-11, hora: 08:00],
+    };
+    DIAGNOSTICOS {
+        diagnostico: "Ana Lopez" [condicion: "Gastritis", medicamento: "Omeprazol 20mg", dosis: DIARIA],
+        diagnostico: "Rosa Lima" [condicion: "Migraña", medicamento: @#Sumatriptan, dosis: SEMANAL],
+    };
+};

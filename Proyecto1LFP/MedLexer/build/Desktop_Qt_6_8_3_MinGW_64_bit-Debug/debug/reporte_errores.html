@@ -1,0 +1,40 @@
+<html><head><meta charset='UTF-8'><style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #1A4731; border-bottom: 3px solid #1A4731; padding-bottom: 8px; }
+        h2 { color: #2E7D52; }
+        table { border-collapse: collapse; width: 100%; background: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        th { background: #1A4731; color: white; padding: 10px; text-align: left; }
+        td { border: 1px solid #ddd; padding: 8px; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        .activo   { background: #28a745; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .sindiag  { background: #fd7e14; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .critico  { background: #dc3545; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .baja     { background: #007bff; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .normal   { background: #28a745; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .alta     { background: #fd7e14; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .saturada { background: #dc3545; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .confirmada { background: #28a745; color: white; padding: 3px 8px;
+                      border-radius: 4px; font-weight: bold; }
+        .conflicto  { background: #dc3545; color: white; padding: 3px 8px;
+                      border-radius: 4px; font-weight: bold; }
+        .pendiente  { background: #fd7e14; color: white; padding: 3px 8px;
+                      border-radius: 4px; font-weight: bold; }
+        .kpi-grid { display: grid; grid-template-columns: repeat(3,1fr);
+                    gap: 16px; margin-bottom: 30px; }
+        .kpi-card { background: white; border-radius: 8px; padding: 16px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    border-left: 4px solid #1A4731; }
+        .kpi-label { font-size: 12px; color: #666; margin-bottom: 4px; }
+        .kpi-value { font-size: 22px; font-weight: bold; color: #1A4731; }
+        .bar-bg { background: #e0e0e0; border-radius: 4px; height: 18px; width: 200px; }
+        .bar-fill { height: 18px; border-radius: 4px; background: #2E7D52; }
+        .bar-red  { background: #dc3545; }
+    </style></head><body><h1>Tabla de Errores Lexicos</h1><table><tr><th>No.</th><th>Lexema</th><th>Tipo de Error</th><th>Descripcion</th><th>Linea</th><th>Columna</th><th>Gravedad</th></tr><tr><td>1</td><td>+</td><td>Token invalido</td><td>Caracter no reconocido: +</td><td>6</td><td>57</td><td><span class='conflicto'>ERROR</span></td></tr><tr><td>2</td><td>", habitacion: 104],</td><td>Cadena sin cerrar</td><td>Se encontro inicio de cadena pero no se cerro</td><td>6</td><td>58</td><td><span class='critico'>CRITICO</span></td></tr><tr><td>3</td><td>2025-13-01</td><td>Fecha con mes invalido</td><td>El mes '13' esta fuera del rango (01-12)</td><td>14</td><td>56</td><td><span class='conflicto'>ERROR</span></td></tr><tr><td>4</td><td>25:00</td><td>Hora fuera de rango</td><td>La hora '25' esta fuera del rango (00-23)</td><td>15</td><td>74</td><td><span class='conflicto'>ERROR</span></td></tr><tr><td>5</td><td>@</td><td>Token invalido</td><td>Caracter no reconocido: @</td><td>22</td><td>71</td><td><span class='conflicto'>ERROR</span></td></tr><tr><td>6</td><td>#</td><td>Token invalido</td><td>Caracter no reconocido: #</td><td>22</td><td>72</td><td><span class='conflicto'>ERROR</span></td></tr></table></body></html>

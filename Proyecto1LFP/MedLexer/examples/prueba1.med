@@ -1,0 +1,24 @@
+HOSPITAL {
+    PACIENTES {
+        paciente: "Maria Garcia" [edad: 45, tipo_sangre: "A+", habitacion: 302],
+        paciente: "Carlos Mendoza" [edad: 62, tipo_sangre: "O-", habitacion: 410],
+        paciente: "Sofia Ramirez" [edad: 29, tipo_sangre: "B+", habitacion: 105],
+        paciente: "Pedro Castillo" [edad: 71, tipo_sangre: "AB-", habitacion: 208],
+    };
+    MEDICOS {
+        medico: "Dr. Roberto Juarez" [especialidad: CARDIOLOGIA, codigo: "MED-001"],
+        medico: "Dra. Ana Solis" [especialidad: NEUROLOGIA, codigo: "MED-002"],
+        medico: "Dr. Luis Herrera" [especialidad: PEDIATRIA, codigo: "MED-003"],
+    };
+    CITAS {
+        cita: "Maria Garcia" con "Dr. Roberto Juarez" [fecha: 2025-04-10, hora: 09:00],
+        cita: "Carlos Mendoza" con "Dra. Ana Solis" [fecha: 2025-04-10, hora: 11:30],
+        cita: "Sofia Ramirez" con "Dr. Luis Herrera" [fecha: 2025-04-11, hora: 08:00],
+        cita: "Pedro Castillo" con "Dr. Roberto Juarez" [fecha: 2025-04-10, hora: 09:00],
+    };
+    DIAGNOSTICOS {
+        diagnostico: "Maria Garcia" [condicion: "Hipertension Arterial", medicamento: "Losartan 50mg", dosis: DIARIA],
+        diagnostico: "Carlos Mendoza" [condicion: "Diabetes Tipo 2", medicamento: "Metformina 850mg", dosis: CADA_12_HORAS],
+        diagnostico: "Pedro Castillo" [condicion: "Insuficiencia Cardiaca", medicamento: "Furosemida 40mg", dosis: DIARIA],
+    };
+};

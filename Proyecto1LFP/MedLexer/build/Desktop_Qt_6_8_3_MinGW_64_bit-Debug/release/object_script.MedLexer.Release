@@ -1,0 +1,11 @@
+release/main.o
+release/mainwindow.o
+release/LexicalAnalyzer.o
+release/Token.o
+release/ReportGenerator.o
+release/main.o
+release/mainwindow.o
+release/LexicalAnalyzer.o
+release/Token.o
+release/ReportGenerator.o
+release/moc_mainwindow.o

@@ -1,0 +1,13 @@
+HOSPITAL {
+    PACIENTES {
+        paciente: "Diana Prince" [edad: 300, tipo_sangre: "O+", habitacion: 901],
+        paciente: "Barry Allen" [edad: 25, tipo_sangre: "A+", habitacion: 902]
+    };
+    MEDICOS {
+        medico: "Dr. Fate" [especialidad: NEUROLOGIA, codigo: "MED-011"]
+    };
+    CITAS {
+        cita: "Diana Prince" con "Dr. Fate" [fecha: 2026-07-15, hora: 10:00],
+        cita: "Barry Allen" con "Dr. Fate" [fecha: 2026-07-15, hora: 10:00]
+    };
+}

@@ -1,0 +1,40 @@
+<html><head><meta charset='UTF-8'><style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        h1 { color: #1A4731; border-bottom: 3px solid #1A4731; padding-bottom: 8px; }
+        h2 { color: #2E7D52; }
+        table { border-collapse: collapse; width: 100%; background: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        th { background: #1A4731; color: white; padding: 10px; text-align: left; }
+        td { border: 1px solid #ddd; padding: 8px; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        .activo   { background: #28a745; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .sindiag  { background: #fd7e14; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .critico  { background: #dc3545; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .baja     { background: #007bff; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .normal   { background: #28a745; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .alta     { background: #fd7e14; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .saturada { background: #dc3545; color: white; padding: 3px 8px;
+                    border-radius: 4px; font-weight: bold; }
+        .confirmada { background: #28a745; color: white; padding: 3px 8px;
+                      border-radius: 4px; font-weight: bold; }
+        .conflicto  { background: #dc3545; color: white; padding: 3px 8px;
+                      border-radius: 4px; font-weight: bold; }
+        .pendiente  { background: #fd7e14; color: white; padding: 3px 8px;
+                      border-radius: 4px; font-weight: bold; }
+        .kpi-grid { display: grid; grid-template-columns: repeat(3,1fr);
+                    gap: 16px; margin-bottom: 30px; }
+        .kpi-card { background: white; border-radius: 8px; padding: 16px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    border-left: 4px solid #1A4731; }
+        .kpi-label { font-size: 12px; color: #666; margin-bottom: 4px; }
+        .kpi-value { font-size: 22px; font-weight: bold; color: #1A4731; }
+        .bar-bg { background: #e0e0e0; border-radius: 4px; height: 18px; width: 200px; }
+        .bar-fill { height: 18px; border-radius: 4px; background: #2E7D52; }
+        .bar-red  { background: #dc3545; }
+    </style></head><body><h1>Reporte 4 - Estadistico General del Hospital</h1><h2>Seccion A - Indicadores Clave</h2><div class='kpi-grid'><div class='kpi-card'><div class='kpi-label'>Total de pacientes</div><div class='kpi-value'>4</div></div><div class='kpi-card'><div class='kpi-label'>Total de medicos</div><div class='kpi-value'>3</div></div><div class='kpi-card'><div class='kpi-label'>Total de citas</div><div class='kpi-value'>4</div></div><div class='kpi-card'><div class='kpi-label'>Citas con conflicto</div><div class='kpi-value'>0</div></div><div class='kpi-card'><div class='kpi-label'>Pacientes con diagnostico</div><div class='kpi-value'>2 de 4 (50%)</div></div><div class='kpi-card'><div class='kpi-label'>Medicamento mas prescrito</div><div class='kpi-value'>N/A (1)</div></div><div class='kpi-card'><div class='kpi-label'>Especialidad con mas citas</div><div class='kpi-value'>CARDIOLOGIA - Dr. Mario Ruiz</div></div><div class='kpi-card'><div class='kpi-label'>Promedio de edad</div><div class='kpi-value'>26.2 anos</div></div></div><h2>Seccion B - Distribucion por Especialidad</h2><table><tr><th>Especialidad</th><th>Medicos</th><th>Citas</th><th>Pacientes</th><th>Ocupacion</th></tr><tr><td>CARDIOLOGIA</td><td>1</td><td>2</td><td>2</td><td><div class='bar-bg'><div class='bar-fill ' style='width:50%'></div></div> 50%</td></tr><tr><td>MEDICINA_GENERAL</td><td>1</td><td>2</td><td>2</td><td><div class='bar-bg'><div class='bar-fill ' style='width:50%'></div></div> 50%</td></tr><tr><td>N/A</td><td>1</td><td>0</td><td>0</td><td><div class='bar-bg'><div class='bar-fill ' style='width:0%'></div></div> 0%</td></tr></table></body></html>
