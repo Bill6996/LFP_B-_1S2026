@@ -1,0 +1,25 @@
+# --- C++ (Backend) ---
+*.exe
+*.o
+*.out
+*.obj
+debug/
+release/
+
+# --- Node / React (Frontend) ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+
+# --- Reportes Generados ---
+# Es mejor no subir los HTML generados para que el auxiliar vea los que el programa crea en vivo
+*.html
+
+# --- VS Code & Sistema ---
+.vscode/
+.DS_Store
+Thumbs.db
+*.code-workspace
